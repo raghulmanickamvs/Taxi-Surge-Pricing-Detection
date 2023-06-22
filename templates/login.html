@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<link href="{% static 'style2.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div class="box">
+      <form action = "login" class="login-form">
+        <h1>Login</h1>
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" name="Login" value="Login">
+        <div class="links">
+          <a href="reset">Forgot Password</a>
+          <a href="signupform">Sign Up</a>
+        </div>
+        </button>
+        <br>
+        <center><strong>{{ message }}</strong></center>
+      </form>
+      
+    </div>
+  </body>
+</html>
